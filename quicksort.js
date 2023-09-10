@@ -29,7 +29,9 @@ function quickSort(numbers) {
     const elem = numbers[index];
     if (elem > pivot) {
       right.push(elem);
-    } else if (elem <= pivot) {
+    } 
+    
+    if (elem <= pivot) {
       left.push(elem);
     }
   }
