@@ -39,7 +39,7 @@ function quickSort(numbers) {
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
 
-function quickSortMutate(numbers) {
+function quickSortWithMutation(numbers) {
   quickSortHelper(numbers, 0, numbers.length - 1);
 }
 
@@ -81,5 +81,5 @@ function partition(numbers, start, end) {
 let vector = [7, 7, 14, 3, 9, 9, 18, 5, 11, 6, 2, 16];
 console.log(quickSort(vector));
 
-quickSortMutate(vector);
+quickSortWithMutation(vector);
 console.log(vector);
